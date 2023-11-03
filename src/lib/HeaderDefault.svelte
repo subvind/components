@@ -39,6 +39,10 @@
 
 
 <style>
+	header {
+    position: relative;
+  }
+
 	nav .sidenav-trigger {
 		display: initial !important;
 	}
