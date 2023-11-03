@@ -4,11 +4,11 @@
 	let categories: any;
 
 	onMount(async () => {
-		let erpHostname = window.location.hostname
-		if (erpHostname === 'localhost') {
-			erpHostname = 'store.subvind.com'
+		let tubeHostname = window.location.hostname
+		if (tubeHostname === 'localhost') {
+			tubeHostname = 'videos.subvind.com'
 		}
-    const response = await fetch(`https://api.subvind.com/categories/erpHostname/${erpHostname}`, {
+    const response = await fetch(`https://api.subvind.com/categories/tubeHostname/${tubeHostname}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
