@@ -1,14 +1,14 @@
 <script lang="ts">
   import { onMount } from 'svelte';
 
-	let categories: any;
+	let playlists: any;
 
 	onMount(async () => {
 		let tubeHostname = window.location.hostname
 		if (tubeHostname === 'localhost') {
 			tubeHostname = 'videos.subvind.com'
 		}
-    const response = await fetch(`https://api.subvind.com/categories/tubeHostname/${tubeHostname}`, {
+    const response = await fetch(`https://api.subvind.com/playlists/tubeHostname/${tubeHostname}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -16,7 +16,7 @@
     });
 
     if (response.ok) {
-      categories = await response.json();
+      playlists = await response.json();
     } else {
 			const errorData = await response.json();
       alert(errorData.error);
@@ -31,15 +31,15 @@
 <li><a class="subheader">Playlists</a></li>
 <li class="black-text">
   <ul class="collapsible">
-    {#if categories}
-      {#each categories.data as category}
-        {#if !category.parentCategory}
+    {#if playlists}
+      {#each playlists.data as playlist}
+        {#if !playlist.parentPlaylist}
           <li>
-            <div class="collapsible-header">{category.name}</div>
+            <div class="collapsible-header">{playlist.name}</div>
             <div class="collapsible-body">
-              {#if category.subCategories}
-                {#each category.subCategories as subCategory}
-                  <li><a class="waves-effect" href={`/categories/${subCategory.slug}`} target="_self"><i class="material-icons">subdirectory_arrow_right</i>{subCategory.name}</a></li>
+              {#if playlist.subPlaylists}
+                {#each playlist.subPlaylists as subPlaylist}
+                  <li><a class="waves-effect" href={`/playlists/${subPlaylist.slug}`} target="_self"><i class="material-icons">subdirectory_arrow_right</i>{subPlaylist.name}</a></li>
                 {/each}
               {/if}
             </div>
