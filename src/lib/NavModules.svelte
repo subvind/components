@@ -31,10 +31,10 @@
 <!-- Dropdown Structure -->
 <ul id='dropdown0528' class='dropdown-content'>
   {#if organization}
-    <li><a href={`https://homenomy.${organization.backendHostname}`}>nomy.HOME</a></li>
-    <li><a href={`https://erpnomy.${organization.backendHostname}`}>nomy.ERP</a></li>
-    <li><a href={`https://tubenomy.${organization.backendHostname}`}>nomy.TUBE</a></li>
-    <li><a href={`https://desknomy.${organization.backendHostname}`}>nomy.DESK</a></li>
+    <li><a href={`https://homenomy.${organization.backendHostname}`}>nomy.HOME - Community Management Software</a></li>
+    <li><a href={`https://erpnomy.${organization.backendHostname}`}>nomy.ERP - Enterprise Resource Planning</a></li>
+    <li><a href={`https://tubenomy.${organization.backendHostname}`}>nomy.TUBE - Library Management Software</a></li>
+    <li><a href={`https://desknomy.${organization.backendHostname}`}>nomy.DESK - Client Area Software</a></li>
   {/if}
 </ul>
 
