@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  import { HeaderTUBE } from "$lib/index.js"
+  import { HeaderDefault } from "$lib/index.js"
 
 	let organization: any;
 	let deskHostname: any = '';
@@ -28,7 +28,7 @@
 </script>
 
 {#if organization}
-  <HeaderTUBE organization={organization} />
+  <HeaderDefault organization={organization} />
 {:else}
   <nav class="grey darken-3">
     <div class="nav-wrapper">

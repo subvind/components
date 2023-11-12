@@ -8,3 +8,5 @@ export { default as Controls } from './Controls.svelte';
 export { default as HeaderDefault } from './HeaderDefault.svelte';
 export { default as HeaderERP } from './HeaderERP.svelte';
 export { default as HeaderTUBE } from './HeaderTUBE.svelte';
+
+export { default as NavModules } from './NavModules.svelte';
