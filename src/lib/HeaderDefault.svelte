@@ -24,7 +24,7 @@
 				</nav>
 				{#if organization}
 					<div class="describe">
-						{organization.description}
+						{@html organization.description}
 					</div>
 				{/if}
 				<Menu organization={organization} />
@@ -48,9 +48,9 @@
 	}
 	
 	.describe {
-    margin: 0px 0.5em;
+    margin: 0.5em;
     color: rgb(17, 17, 17);
-    line-height: 2em;
+    line-height: 1.5em;
     text-align: center;
 	}
 </style>
