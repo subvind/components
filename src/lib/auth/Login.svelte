@@ -103,6 +103,8 @@
     <div>
       {#if organization}
         {organization.backendHostname}
+      {:else}
+        authentication
       {/if}
     </div>
   </div>

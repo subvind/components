@@ -1,4 +1,5 @@
 // Reexport your entry components here
+export { default as Auth } from './Auth.svelte';
 export { default as Menu } from './Menu.svelte';
 export { default as MenuCategories } from './MenuCategories.svelte';
 export { default as MenuPlaylists } from './MenuPlaylists.svelte';

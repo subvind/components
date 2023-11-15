@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
 
-	import { Menu, Controls } from './index.js'
+	import { Auth, Menu, Controls } from './index.js'
 
 	export let organization: any;
 
@@ -27,6 +27,7 @@
 						{@html organization.description}
 					</div>
 				{/if}
+				<Auth organization={organization} />
 				<Menu organization={organization} />
 			</ul>
 			{#if organization}
