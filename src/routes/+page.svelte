@@ -3,6 +3,7 @@
 
   import { AuthRegister } from "$lib/index.js"
   import { AuthLogin } from "$lib/index.js"
+  import { AuthAccountLogin } from "$lib/index.js"
 
 	let organization: any;
 
@@ -30,7 +31,8 @@
 <!-- <NavModules load="erpnomy" organization={organization} /> -->
 
 <!-- <AuthRegister organization={organization} /> -->
-<AuthLogin organization={organization} />
+<!-- <AuthLogin organization={organization} /> -->
+<AuthAccountLogin organization={organization} />
 
 <div class="container">
   <h1>Welcome to your library project</h1>
