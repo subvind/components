@@ -9,7 +9,6 @@
 	let email = ''
   let password = ''
   let passwordRepeat = ''
-	let deskHostname: any = '';
   export let organization: any;
 
 	async function register(event: any) {
@@ -70,7 +69,7 @@
           console.log('decoded_token', decodedToken)
 
           // You can redirect the user to a new page or handle the success scenario in your app
-          window.location.href = `/portal/dashboard`
+          window.location.href = `/auth/success`
         } else {
           const errorData = await response.json();
           alert(errorData.error);
@@ -89,32 +88,11 @@
 
   onMount(async () => {
 
-    deskHostname = window.location.hostname
-    if (deskHostname === 'localhost') {
-      deskHostname = 'client-area.subvind.com'
-    }
-    const response = await fetch(`https://api.subvind.com/organizations/deskHostname/${deskHostname}`, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      }
-    });
-
-    if (response.ok) {
-      organization = await response.json();
-    } else {
-      const errorData = await response.json();
-      alert(errorData.error);
-    }
-
   })
 </script>
 
 <div class="contain">
   <div class="header">
-    <!-- <a href="https://underwind.solutions">
-      <img src="/anchor.png" alt="underwind.solutions" class="anchor">
-    </a> -->
     <h1 class="title">
       Register
     </h1>

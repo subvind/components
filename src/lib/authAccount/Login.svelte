@@ -6,13 +6,11 @@
   let loading: boolean = false;
 	let email = ''
   let password = ''
-  // let type = ''
   export let organization: any;
 
   async function login(event: any) {
     event.preventDefault()
 
-    // if (type === '') return alert('Account type must be defined.')
     if (email === '') return alert('Email must be defined.')
     if (password === '') return alert('Password must be defined.')
 
@@ -59,9 +57,6 @@
 
 <div class="contain">
   <div class="header">
-    <!-- <a href="https://underwind.solutions">
-      <img src="/anchor.png" alt="underwind.solutions" class="anchor">
-    </a> -->
     <h1 class="title">
       Login
     </h1>
@@ -74,15 +69,6 @@
   <form class="card" on:submit={(e) => login(e)}>
     <div class="card-content">
       <div class="row">
-        <!-- <div class="input-field col s12">
-          <select bind:value={type}>
-            <option value="" disabled selected>Choose your membership</option>
-            <option value="organization-customer">customer</option>
-            <option value="organization-employee">employee</option>
-            <option value="organization-supplier">supplier</option>
-          </select>
-          <label>Account Type</label>
-        </div> -->
         <div class="input-field col s12">
           <input id="email" type="email" placeholder="test@test.com" class="validate" bind:value={email}>
           <label for="email">Email</label>
