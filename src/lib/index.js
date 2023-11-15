@@ -10,3 +10,7 @@ export { default as HeaderERP } from './HeaderERP.svelte';
 export { default as HeaderTUBE } from './HeaderTUBE.svelte';
 
 export { default as NavModules } from './NavModules.svelte';
+
+export { default as AuthLogin } from './auth/Login.svelte';
+export { default as AuthRegister } from './auth/Register.svelte';
+export { default as AuthSelectOrganization } from './auth/SelectOrganization.svelte';
