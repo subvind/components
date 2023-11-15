@@ -1,7 +1,7 @@
 
 <script lang="ts">
   import { onMount } from 'svelte';
-  import jwt_decode from 'jwt-decode';
+  import { jwtDecode } from 'jwt-decode';
   import SelectOrganization from './SelectOrganization.svelte';
 
   let loading: boolean = false;
@@ -42,7 +42,7 @@
           localStorage.setItem('access_token', res.access_token);
   
           // Decode the JWT
-          let decodedToken: any = jwt_decode(res.access_token);
+          let decodedToken: any = jwtDecode(res.access_token);
   
           console.log('decoded_token', decodedToken)
   
