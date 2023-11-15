@@ -9,6 +9,7 @@
 	let email = ''
   let password = ''
   let passwordRepeat = ''
+  export let organization: any;
 
 	async function register(event: any) {
     event.preventDefault()
@@ -80,6 +81,10 @@
 
     loading = false
   }
+
+  onMount(() => {
+    M.updateTextFields();
+  })
 </script>
 
 <div class="contain">
@@ -90,10 +95,19 @@
     <h1 class="title">
       Register
     </h1>
+    <div>
+      {#if organization}
+        {organization.backendHostname}
+      {/if}
+    </div>
   </div>
   <form class="card" on:submit={(e) => register(e)}>
     <div class="card-content">
       <div class="row">
+        <div class="input-field col s12">
+          <input id="accountType" type="text" value="root user" disabled>
+          <label for="accountType">Account Type</label>
+        </div>
         <div class="input-field col s12">
           <input id="username" type="text" class="validate" bind:value={username}>
           <label for="username">Username</label>

@@ -1,7 +1,8 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  import { NavModules } from "$lib/index.js"
+  import { AuthRegister } from "$lib/index.js"
+  import { AuthLogin } from "$lib/index.js"
 
 	let organization: any;
 
@@ -26,7 +27,10 @@
   })
 </script>
 
-<NavModules load="erpnomy" organization={organization} />
+<!-- <NavModules load="erpnomy" organization={organization} /> -->
+
+<!-- <AuthRegister organization={organization} /> -->
+<AuthLogin organization={organization} />
 
 <div class="container">
   <h1>Welcome to your library project</h1>

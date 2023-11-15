@@ -8,7 +8,7 @@
 	let email = ''
   let password = ''
   let type = ''
-  let organization: any = ''
+  export let organization: any;
 
   async function login(event: any) {
     event.preventDefault()
@@ -69,7 +69,7 @@
           let res = await response.json();
           console.log('access_token', res.access_token)
           localStorage.setItem('access_token', res.access_token);
-          let decodedToken: any = jwt_decode(res.access_token);
+          let decodedToken: any = jwtDecode(res.access_token);
           window.location.href = `/${decodedToken.ownername}/${decodedToken.orgname}/accounts/${decodedToken.accountname}`
         } else {
           const errorData = await response.json();
@@ -100,6 +100,11 @@
     <h1 class="title">
       Login
     </h1>
+    <div>
+      {#if organization}
+        {organization.backendHostname}
+      {/if}
+    </div>
   </div>
   <form class="card" on:submit={(e) => login(e)}>
     <div class="card-content">
