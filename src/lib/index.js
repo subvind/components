@@ -18,3 +18,5 @@ export { default as AuthSelectOrganization } from './auth/SelectOrganization.sve
 
 export { default as AuthAccountLogin } from './authAccount/Login.svelte';
 export { default as AuthAccountRegister } from './authAccount/Register.svelte';
+
+export { default as FooterCommand } from './FooterCommand.svelte';

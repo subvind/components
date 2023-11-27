@@ -32,7 +32,7 @@
 
 <!-- <AuthRegister organization={organization} /> -->
 <!-- <AuthLogin organization={organization} /> -->
-<AuthAccountLogin organization={organization} />
+<!-- <AuthAccountLogin organization={organization} /> -->
 
 <div class="container">
   <h1>Welcome to your library project</h1>

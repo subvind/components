@@ -2,6 +2,7 @@
   import { onMount } from "svelte";
 
   import { HeaderDefault } from "$lib/index.js"
+  import { FooterCommand } from "$lib/index.js"
 
 	let organization: any;
 	let deskHostname: any = '';
@@ -37,6 +38,8 @@
 {/if}
 
 <slot />
+
+<FooterCommand active="ERP" />
 
 <style>
   :global(body) {
