@@ -10,12 +10,12 @@
 <div class="container">
   <div class="row" style="margin: 0 -1em;">
     <div class="col s12 m5">
-      <h6>About US</h6>
+      <h6>About us</h6>
       <p>
         <a href="https://underwind.solutions">underwind.solutions</a> was formed in 2023 as a software agency for generating fair source products.
       </p>
       <p>
-        <a href="https://subvind.com">subvind.com</a> and everything under the -nomy branding are products made by US.
+        <a href="https://subvind.com">subvind.com</a> and everything under the -nomy branding are products made by us.
       </p>
       <p>
         <a href="https://istrav.com">istrav.com</a> is where where you may find our coding community. Plus, documentation about our µSaaS Modules, our developer API, and our client area.
