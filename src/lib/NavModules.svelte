@@ -15,16 +15,16 @@
 
 <a href="#" class="brand-logo center dropdown-trigger0528" data-target='dropdown0528'>
   {#if load === 'homenomy'}
-    <span class="yellow">nomy</span>.<span class="red">HOME</span>
+    <span class="yellow">nomy</span>.<span class="purple">HOME</span>
   {/if}
   {#if load === 'erpnomy'}
     <span class="yellow">nomy</span>.<span class="green">E</span><span class="red">R</span><span class="blue">P</span>
   {/if}
   {#if load === 'tubenomy'}
-    <span class="yellow">nomy</span>.<span class="red">TUBE</span>
+    <span class="yellow">nomy</span>.<span class="purple">TUBE</span>
   {/if}
   {#if load === 'desknomy'}
-    <span class="yellow">nomy</span>.<span class="red">DESK</span>
+    <span class="yellow">nomy</span>.<span class="purple">DESK</span>
   {/if}
 </a>
 
@@ -56,7 +56,7 @@
     background-color: transparent !important;
   }
   .purple {
-    color: purple;
+    color: #AE81FF;
     background-color: transparent !important;
   }
 </style>
