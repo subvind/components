@@ -12,7 +12,7 @@
 
 <li><div class="divider"></div></li>
 <li><a class="subheader">Menu</a></li>
-{#if organization.menu}
+{#if organization.menu && organization.menu.length}
 	{#each organization.menu as menu}
 		<li><a href={menu.url} target="_self" class="waves-effect" ><i class="material-icons">{menu.icon}</i>{menu.name}</a></li>
 	{/each}

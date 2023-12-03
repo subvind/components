@@ -10,7 +10,7 @@
   onMount(async () => {
     let deskHostname = window.location.hostname
     if (deskHostname === 'localhost') {
-      deskHostname = 'client-area.istrav.com'
+      deskHostname = 'client-area.subvind.com'
     }
     const response = await fetch(`https://api.subvind.com/organizations/deskHostname/${deskHostname}`, {
       method: 'GET',
