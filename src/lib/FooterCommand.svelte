@@ -21,7 +21,7 @@
         <a href="https://istrav.com">istrav.com</a> is where where you may find our coding community. Plus, documentation about our µSaaS Modules, our developer API, and our client area.
       </p>
       <p>
-        Pricing starts at $19/month! (<a href="https://www.subvind.com">demo</a>)
+        Pricing starts at $19/month! (<a href="https://demo.subvind.com">demo</a>)
       </p>
     </div>
     <div class="col s12 m7" style="text-align: right;">
