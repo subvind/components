@@ -11,7 +11,7 @@
 	})
 </script>
 
-<header>
+<header class="navbar-fixed">
 	<nav class="grey darken-3">
 		<div class="nav-wrapper">
 			<ul id="slide-out" class="sidenav">
@@ -22,6 +22,7 @@
 						{/if}
 					</div>
 				</nav>
+				<br />
 				{#if organization}
 					<div class="describe">
 						{@html organization.description}
@@ -53,5 +54,9 @@
     color: rgb(17, 17, 17);
     line-height: 1.5em;
     text-align: center;
+	}
+
+	:global(.sidenav-overlay) {
+		z-index: 0;
 	}
 </style>
