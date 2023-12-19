@@ -18,7 +18,7 @@
         <a href="https://subvind.com">subvind.com</a> and everything under the -nomy branding are products made by us.
       </p>
       <p>
-        <a href="https://istrav.com">istrav.com</a> is where where you may find our coding community. Plus, documentation about our µSaaS Modules, our developer API, and our client area.
+        <a href="https://istrav.com">istrav.com</a> is where you may find our coding community. Plus, documentation about our µSaaS Modules, our developer API, and our client area.
       </p>
       <p>
         Pricing starts at $19/month! (<a href="https://demo.subvind.com">demo</a>)
